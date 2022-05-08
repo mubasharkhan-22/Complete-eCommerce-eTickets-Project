@@ -18,7 +18,7 @@ namespace eCommerce.Controllers
         public async Task<IActionResult> Index()
         {
             var allCenimas = await _context.Cenimas.ToListAsync();
-            return View();
+            return View(allCenimas);
         }
     }
 }
