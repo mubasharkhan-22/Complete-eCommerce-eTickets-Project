@@ -13,5 +13,8 @@ namespace eCommerce.Models
         public string ProfilePictureURL { get; set; }
         public string FullName { get; set; }
         public string Bio { get; set; }
+
+        //RealtionShip
+        public List<Movie> Movies { get; set; } // means producer can multiple movies or list of movies
     }
 }

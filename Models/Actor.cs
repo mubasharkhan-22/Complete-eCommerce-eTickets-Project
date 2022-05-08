@@ -13,5 +13,7 @@ namespace eCommerce.Models
         public string ProfilePictureURL { get; set; }
         public string FullName { get; set; }
         public string Bio { get; set; }
+        //RealtionShip
+        public List<Actor_Movie> Actor_Movies { get; set; } // means an actor have all the movies in the Actor_Movie class but Actor_Movie
     }
 }
