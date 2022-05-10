@@ -1,4 +1,5 @@
 using eCommerce.Data;
+using eCommerce.Data.Services;
 using eTickets.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,6 +29,7 @@ namespace eCommerce
         {
             //DbContext Configuration
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Conn")));
+            services.AddScoped<IActorsService, ActorsService>();
             services.AddControllersWithViews();
         }
 
